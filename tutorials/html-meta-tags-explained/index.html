@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--
+    <script type="text/genalpha">
+        cook{
+            yap(Hello World!);
+        };
+    </script>
+-->
+<html lang="en">
+    <head>
+        <script>
+            if (window.self !== window.top) {
+                window.location.href = "/blocked";
+            }
+        </script>
+        <meta charset="utf-8">
+        <base href="/">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-language" content="en-US"/>
+        <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+        <meta name="robots" content="index, nofollow, noimageindex, noarchive, nosnippet">
+        <meta name="description" content="">
+        <meta name="author" content="Kevin Király">
+        <meta name="theme-color" content="#FFF">
+        <meta name="apple-mobile-web-app-status-bar-style" content="white">
+        <title>HTML meta tags explained - KKevin</title>
+        <meta name="generator" content="Jekyll v3.10.0"/>
+        <meta property="og:title" content="HTML meta tags explained - KKevin">
+        <meta property="og:description" content="What are them? What is their purpose and use? In this article you'll get the answers with examples.">
+        <meta property="og:url" content="/">
+        <link rel="canonical" href="/"/>
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="/assets/js/script.js"></script>
+    </head>
+    <body>
+        <noscript>
+            <p>This website requires JavaScript to function properly. Please enable JavaScript in your browser settings.</p>
+        </noscript>
+        <header include-html="/incl/header.html" class="site-header"></header>
+        <main class="page-content" aria-label="Content">
+            <div class="wrapper">
+                <article class="post h-entry">
+                    <header class="post-header">
+                      <h1 class="post-title p-name">HTML meta tags explained</h1>
+                      <p class="post-meta"><time class="dt-published">23 November, 2024</time></p>
+                      <p>What are them? What is their purpose and use? In this article you'll get the answers with examples.</p>
+                    </header>
+                    <div class="post-content e-content">
+                        <h1>What is a HTML meta tag?</h1>
+                        <p>The &lt;meta> tag defines metadata about an HTML document. Metadata is data (information) about data.</p>
+                        <p>&lt;meta> tags always go inside the &lt;head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.</p>
+                        <p>Metadata will not be displayed on the page, but is machine parsable.</p>
+                        <p>Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.</p>
+                        <p><b>Source: (W3Schools HTML meta tag article)</b></p>
+                        <h1>Basic meta tags</h1>
+                        <h2>1. Charset</h2>
+                        <p>Specifies the character encoding for the HTML document.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta charset="utf-8"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>2. Base</h2>
+                        <p>Specifies the default directory.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;base href="https://www.mysite.hu/"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>3. Viewport</h2>
+                        <p>Configures the viewport properties, enabling responsive design on different devices.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>4. Description</h2>
+                        <p>Provides a brief description of the document. This is often used by search engines.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta name="description" content="This is a webpage about HTML meta tags."></code>
+                        <p></p>
+                        <hr/>
+                        <h2>5. Keywords</h2>
+                        <p>Specifies a list of comma-separated keywords relevant to the document.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta name="keywords" content="HTML, meta tags, web development"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>6. Author</h2>
+                        <p>Indicates the author of the document in the code.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta name="author" content="Kevin K."></code>
+                        <p></p>
+                        <hr/>
+                        <h2>7. Robots</h2>
+                        <p>Informs search engines whether to index and follow the links within the document.</p>
+                        <p><b>Good to know! The listed "args" are in "negative" form, search engines will not index the pages, images and links, also not archive or show a snippet about the page in the search results.</b></p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta name="robots" content="noindex, nofollow, noimageindex, nosnippet, noarchive"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>8. Theme color</h2>
+                        <p>Sets the theme color for most browsers. It changes the look of the browser's UI elements when the site is added to the home screen on mobile.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta name="theme-color" content="#000"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>9. Apple mobile web app</h2>
+                        <p>Specifies whether a web application should run in full-screen mode when launched on an iOS device.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta name="apple-mobile-web-app-capable" content="yes"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>10. Apple mobile web app status bar</h2>
+                        <p>Sets the style of the status bar for a web app on iOS devices.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>11. Format detection</h2>
+                        <p>Prevents automatic detection and formatting of possible phone numbers in a webpage.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta name="format-detection" content="telephone=no"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>12. Referrer</h2>
+                        <p>Specifies the referrer policy for links on a webpage.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta name="referrer" content="no-referrer"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>13. Generator</h2>
+                        <p>Indicates the software or tool used to create the webpage.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta name="generator" content="WordPress"></code>
+                        <p></p>
+                        <h1>Information/value meta tags</h1>
+                        <h2>1. Cache controller</h2>
+                        <p>Directs browsers not to cache the content of a web page.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>2. Content language</h2>
+                        <p>Specifies the language of the content on the webpage.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta http-equiv="content-language" content="en"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>3. Content Security Policy (CSP)</h2>
+                        <p>Helps prevent cross-site scripting (XSS) and other code injection attacks.</p>
+                        <p><a href="https://www.instagram.com/reel/C9uq3oVMHXH/?igsh=bjNvdjMzeGduZnhu" target="_blank" rel="noopener noreferrer">Learn facts how cross-site scripting works.</a></p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta http-equiv="Content-Security-Policy" content="default-src 'self'"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>4. Expirity</h2>
+                        <p>Sets an expiration date in the past, essentially telling the browser the page has expired.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta http-equiv="expires" content="0"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>5. MIME type options</h2>
+                        <p>Prevents browsers from interpreting files as a different MIME type.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta http-equiv="X-Content-Type-Options" content="nosniff"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>6. Pragma</h2>
+                        <p>Provides instructions to the browser not to store a cached copy of the web page.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta http-equiv="pragma" content="no-cache"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>7. Refresh</h2>
+                        <p>Redirects the browser to another URL after a specified time interval (in seconds).</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta http-equiv="refresh" content="5;url=&lt;https://www.mysite.hu/redirected/>"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>8. Strict transport security</h2>
+                        <p>Enforces the use of HTTPS for the website.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>9. X-Frame options</h2>
+                        <p>Prevents a webpage from being displayed in a frame or iframe.</p>
+                        <p><b>Good to know! Major browsers throw an error and not executing the tag. See below.</b></p>
+                        <img src="/tutorials/html-meta-tags-explained/X-Frame-Options-ingored.jpg" alt="image" draggable="false">
+                        <p></p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta http-equiv="X-Frame-Options" content="deny"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>10. X-UA-Compatible</h2>
+                        <p>Instructs Internet Explorer to use its latest and best version to render the web page.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"></code>
+                        <p></p>
+                        <h1>Open Graph meta tags</h1>
+                        <h2>1. Open Graph title</h2>
+                        <p>Specifies the title of the Open Graph object (for social media sharing).</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta property="og:title" content="Mysite"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>2. Open Graph description</h2>
+                        <p>Provides a description of the Open Graph object (for social media sharing.)</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta property="og:description" content="This is a sample page for Open Graph testing."></code>
+                        <p></p>
+                        <hr/>
+                        <h2>3. Open Graph image</h2>
+                        <p>Specifies the URL of the image for the Open Graph object (for social media sharing).</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta property="og:image" content="/images/socialshare.jpg"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>4. Open Graph URL</h2>
+                        <p>Specifies the URL of the Open Graph object (your webpage) for social media sharing.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;property="og:url" content="https://mysite.hu/example-url/"></code>
+                        <p></p>
+                        <h1>Twitter/X profile tags</h1>
+                        <h2>1. Twitter URL</h2>
+                        <p>Specifies the URL of the Twitter card associated with the shared content.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta name="twitter:url" content="https://mysite.hu/twitter/"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>2. Twitter card</h2>
+                        <p>Specifies the card type for the Twitter card metadata.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta name="twitter:card" content="summary"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>3. Twitter site</h2>
+                        <p>Associates a Twitter username with the website for Twitter cards.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta name="twitter:site" content="@example"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>4. Twitter title</h2>
+                        <p>Sets the title for the Twitter card.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta name="twitter:title" content="Sample Twitter Card"></code>
+                        <p></p>
+                        <hr/>
+                        <h2>5. Twitter description</h2>
+                        <p>Provides a description for the Twitter card.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta name="twitter:description" content="This is a sample Twitter card description."></code>
+                        <p></p>
+                        <hr/>
+                        <h2>6. Twitter image</h2>
+                        <p>Specifies the URL of the image for the Twitter card.</p>
+                        <code class="language-plaintext highlighter-rouge">&lt;meta name="twitter:image" content="https://mysite.hu/images/<br/>twitter/socailshare.jpg"></code>
+                        <p></p>
+                        <h1>Comments</h1>
+                        <div include-html="/backend/incl/comments.php?pageid="></div>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <footer include-html="/incl/footer.html" class="site-footer h-card"></footer>
+    </body>
+</html>

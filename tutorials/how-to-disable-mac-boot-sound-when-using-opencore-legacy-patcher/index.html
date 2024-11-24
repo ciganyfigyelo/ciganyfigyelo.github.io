@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+    <script type="text/genalpha">
+        cook{
+            yap(Hello World!);
+        };
+    </script>
+-->
+<html lang="en">
+    <head>
+        <script>
+            if (window.self !== window.top) {
+                window.location.href = "/blocked";
+            }
+        </script>
+        <meta charset="utf-8">
+        <base href="/">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-language" content="en-US"/>
+        <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+        <meta name="robots" content="index, nofollow, noimageindex, noarchive, nosnippet">
+        <meta name="description" content="">
+        <meta name="author" content="Kevin Király">
+        <meta name="theme-color" content="#FFF">
+        <meta name="apple-mobile-web-app-status-bar-style" content="white">
+        <title>How to disable the MacOS startup sound temporarily when using OpenCore Legacy Patcher - KKevin</title>
+        <meta name="generator" content="Jekyll v3.10.0"/>
+        <meta property="og:title" content="How to disable the MacOS startup sound temporarily when using OpenCore Legacy Patcher - KKevin">
+        <meta property="og:description" content="I hope this small article will help you out.">
+        <meta property="og:url" content="/">
+        <link rel="canonical" href="/"/>
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="/assets/js/script.js"></script>
+    </head>
+    <body>
+        <noscript>
+            <p>This website requires JavaScript to function properly. Please enable JavaScript in your browser settings.</p>
+        </noscript>
+        <header include-html="/incl/header.html" class="site-header"></header>
+        <main class="page-content" aria-label="Content">
+            <div class="wrapper">
+                <article class="post h-entry">
+                    <header class="post-header">
+                      <h1 class="post-title p-name">How to disable the MacOS startup sound temporarily when using OpenCore Legacy Patcher</h1>
+                      <p class="post-meta"><time class="dt-published">24 November, 2024</time></p>
+                      <p>I made this tutorial because nowhere to be found any article about it.</p>
+                    </header>
+                    <div class="post-content e-content">
+                        <h1>What is a startup sound?</h1>
+                        <p>The startup sound or chime is a short sound effect that is played after the user presses the power button. Apple introduced the MacOS startup chime back in 1984 and has evolved over the years.</p>
+                        <h1>How to disable the startup sound?</h1>
+                        <p>The option to disable or enable in didn't came until MacOS 11 (Big Sur). Since that you can disable it in the System Preferences &gt; Sound &gt; Play sound on startup.</p>
+                        <figure>
+                          <img src="/tutorials/how-to-disable-mac-boot-sound-when-using-opencore-legacy-patcher/syspref.png" width="100%" height="100%" alt="syspref.png" draggable="false">
+                          <figcaption>The sound tab in system preferences on MacOS 11 (Big Sur)</figcaption>
+                        </figure>
+                        <p>When using Dortania's OpenCore Legacy Patcher this option is not working as expected.</p>
+                        <h1>How to disable it when using OCLP?</h1>
+                        <p>You can't fully disable it but using a command in Terminal can mute the startup sound temporarily. Write the following code into your Terminal: <code class="language-plaintext highlighter-rouge">sudo nvram SystemAudioVolume=%80</code>. This command sets the startup sound volume to zero.</p>
+                        <p>I hope this article helped.</p>
+                        <p>Images taken on my 13-inch Macbook Pro Early 2011 running MacOS 11.7.10 Big Sur.</p>
+                        <h1>Comments</h1>
+                        <div include-html="/backend/incl/comments.php?pageid="></div>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <footer include-html="/incl/footer.html" class="site-footer h-card"></footer>
+    </body>
+</html>
